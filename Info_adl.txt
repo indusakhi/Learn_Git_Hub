@@ -1,0 +1,37 @@
+port_mapping.adl --> internal interface to external interface
+nip_signals.adl  --> all external signals along with values
+nip.json
+scriptjsontoidl.py
+
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/tree/main/applications/common/adas_api/network/internal 
+-->This directory defines the internal communication between ECUs within the CAS scope, 
+e.g. signal communication between ADAS ECU and a radar ECU. All data which is needed to excecutate 
+and configure the toolchain (e.g. Busnet) have to be stored within that folder.
+
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/tree/main/applications/common/adas_api/aos_api
+-->This document describes how to apply the Vehicle Signal Specification (VSS) to
+ model platform-independent signals and interfaces for the Cariad ADAS Stack (CAS).
+ 
+ 
+signal_library.adl  -> all internal signals along with mapped values
+vss.adl  --> description reagrding terminologes
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/blob/main/applications/common/adas_api/aos_api/vss_tree.md
+--> tree structure regarding signals usage
+vss.yaml
+
+
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/tree/main/applications/common/adas_api/functional_arch/customer_functions
+-->There shall be one file per customer function containing the UseCases and the corresponding Functional Effect Chains of the customer function.
+
+wba_front.adl-->use cases and functional chains
+
+
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/tree/main/applications/common/adas_api/apps
+-->This directory defines the logical information between aos clients (runnables, gateways) and the non-aos world.
+
+wba_front.adl -->in and out signal information
+
+
+https://git.hub.vwgroup.com/CARIAD/app-adas-src/tree/main/applications/common/adas_api/host/adasblade
+datasets.adl --> datasets related to adas blade
+
